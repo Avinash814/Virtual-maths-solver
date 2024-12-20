@@ -3,3 +3,4 @@ cvzone
 numpy
 Pillow
 google-generativeai
+opencv-python>=4.8.0

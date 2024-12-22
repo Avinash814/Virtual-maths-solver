@@ -1,6 +1,7 @@
 opencv-python
-cvzone
-numpy
-Pillow
+pillow
+mediapipe
 google-generativeai
-opencv-python>=4.8.0
+streamlit
+streamlit-extras
+numpy

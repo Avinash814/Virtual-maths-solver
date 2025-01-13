@@ -1,12 +1,17 @@
 import streamlit as st
 import cv2
+from dotenv import load_dotenv
 import numpy as np
 from cvzone.HandTrackingModule import HandDetector
 from PIL import Image
 import google.generativeai as genai
 
+# Load environment variables
+load_dotenv()
+
 # AI model configuration
-genai.configure(api_key="AIzaSyDkwS9HNNZ2xg1ifRrq2p0AD312uCa0Zgo")
+# Configure Generative AI API
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # Initialize hand detector
